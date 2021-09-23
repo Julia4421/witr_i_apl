@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_Lysik()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<br>
+-kiedy powstała   <br>
+- 1995 roku  <br> 
+-dlaczego jest to język skryptowy   <br> 
+- Ponieważ nie moze zostac skompilowany do kodu maszynowego  <br> 
+-gdzie jest wykonywany JS (kliet lub serwer)  <br>
+- Klient  <br> 
+-dlaczego jest to bezpieczne narzędzie  <br>
+Jest bezpieczne, dlatego, ze ma ograniczone uprawnienia dostepu do zasobow komputera  <br>
+-czy jest to język obiektowy , jeśli tak to dlaczego.  <br>
+Występujace w jezyku obiekt Image i tablica document.images, swiadcza o tym, ze jest to jezyk obiektowy.  <br>
+<br>
+<br>
+<textarea>
+<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen('')">
+Dodaje przycisk o nazwie "przycik" otwierający nowa strone. <br>
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");  <br>
+Otwiera nowe okno z obrazem  <br>
+toolbar=no -> ukrywa pasek narzedzi  <br>
+directories=no, ->  ukrywa przyciski katalogow  <br>
+menubar=no, -> ukrywa menu przegladarki  <br>
+height=280, -> ustawia wysokosc okna na 280  <br>
+width=160,  -> ustawia szerokosc okna na 160  <br>
+top=200, ->  ustawia polozenie okna wzgledem gory ekranu na 200  <br>
+left=200 -> ustawia polozenie okna wzgledem lewej strony ekranu na 200  <br>
+window.close()
+Zamyka okno 
+</textarea>
+<br>
+<img src="obraz1.gif" />
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Lysik()"/>
+</form>
+</body>
+</html>
