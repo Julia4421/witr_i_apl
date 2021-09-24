@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_Lysik()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Cztery sposoby wyprowadzania danych na stronę: <br>
+1. Z użyciem dokument.write() <br>
+
+2. z użyciem okiena alert() <br>
+
+3. do okienek formularza <br>
+
+4. do tabeli <br>
+<br>
+<br>
+Właściwości innerHTML umożliwia umieszczenie za pomocą jednej instrukcji dowolnie złożonej
+zawartości HTML we wskazanym elemencie np. w tabeli. <br>
+<br>
+<b> getElementsByTagName </b> <br>
+<br>
+<br>
+Metoda getElementsByTagName() zwraca kolekcję typu HTMLCollection ze wszystkimi potomkami 
+typu Element o określonej nazwie kwalifikowanej, którzy znajdują się w danym dokumencie 
+(zgodnie z porządkiem drzewa). W przypadku braku pasujących elementów zwrócona zostanie pusta kolekcja. <br>
+<br>
+<br>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Lysik()"/>
+</form>
+</body>
+</html>
