@@ -1,0 +1,52 @@
+<html> 
+<head> 
+<title>
+Zadanie 19
+</title>
+<script language="JavaScript">
+function pole_Lys(a,b)
+{
+a_dana_Lys=parseFloat(a)
+b_dana_Lys=parseFloat(b)
+pole_wynik=a_dana*b_dana;
+document.getElementsByName('obj')[0].value=pole_wynik.toFixed(2); /* na dokument */
+alert("Pole prostokata:"+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+pokaz1.innerHTML="V="+pole_wynik.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+}
+
+function obwod_Lys(a,b)
+{
+a_dana_Lys=parseFloat(a)
+b_dana_Lys=parseFloat(b)
+obwod_wynik=2*a_dana_Lys+2*b_dana_Lys;
+document.getElementsByName('obwod')[0].value=obwod_wynik.toFixed(2);
+alert("Obwod prostokata:"+obwod_wynik.toFixed(2)+" cm");
+pokaz2.innerHTML="Obwod prostokata="+obwod_wynik.toFixed(2)+"cm";
+}
+</script>
+</head> 
+<body> 
+Obliczanie Pola i Obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value); 
+obwod_Lys(this.podstawa.value,this.wysokosc.value);return false"> 
+Podaj a=
+<input size="6" name="promien">
+Podaj b=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole =
+<input size="6" name="obj">
+Obwod =
+<input size="6" name="obwod">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
